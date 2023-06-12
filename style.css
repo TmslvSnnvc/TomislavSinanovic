@@ -1,0 +1,515 @@
+@charset "utf-8";
+* {
+	padding:0;
+	margin:0;
+}
+@font-face {
+    font-family: "TomislavSinanovic";
+    src:url("TomislavSinanovic.ttf");
+}
+body {
+	background-image: url("slike/p.jpg");
+}
+.nav
+{
+	position:sticky;
+	top:0;
+	display: flex;
+	flex-wrap:wrap;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content:center;
+	border-top:3px solid white;
+	border-bottom:3px solid white;
+	background-color:#101c3d;
+}
+.nav a
+{
+	text-decoration: none;
+	color:white;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size:30px;
+	padding-left:80px;
+	padding-right:80px;
+	transition: 0.3s;
+}
+.nav a:hover
+{
+	color:#6898e3;
+	transform: scale(0.9);
+}
+.izbornik {
+	margin-bottom:60px;
+}
+.izbornik ul {
+	width:100%;
+	height:auto;
+	list-style:none;
+	text-align:center;
+}
+.izbornik li {
+	display:inline-block;
+	background-color:white;
+	width:90px;
+	transition: 0.3s;
+}
+.izbornik a {
+	text-decoration:none;
+	color:#101c3d;
+	width:90px;
+	display:block;
+	padding:5px 0px 0px 0px;
+	font-family:'Bebas Neue';
+	font-weight:bold;
+	font-size:40px;
+	text-transform:none;
+	text-align:center;
+}
+.izbornik li:hover {
+	background-color:transparent;
+}
+.izbornik a:hover {
+	color:white;
+}
+.main {
+	display:flex;
+	flex-wrap:wrap;
+	height:300px;
+	width:100%;
+	justify-content:center;
+}
+.moja_slika {
+	margin-left:-200px;
+}
+.ime {
+	margin:50px 0pc 0px 100px;
+	width:100px;
+}
+h1, h2{
+	color:white;
+}
+h1 {
+	width:100px;
+	font-size:70px;
+	font-family:'TomislavSinanovic';
+}
+h2 {
+	margin-top:20px;
+	width:300px;
+	font-size:23px;
+	font-family:'Verdana';
+}
+.main2 {
+	display:flex;
+	flex-wrap:wrap;
+	height:500px;
+	margin-top:50px;
+	width:100%;
+	justify-content:center;
+}
+.naslovna_lijevo {
+	font-size:70px;
+	margin:30px 50px 0px 0px;
+	color:white;
+	width:500px;
+	line-height:120px;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+}
+.naslovna_desno {
+	margin:30px 0px 0px 20px;
+	padding:20px 20px 0px 20px;
+	color:white;
+	width:500px;
+	height:350px;
+	text-align:center;
+	border: 3px solid white;
+	border-bottom:0px;
+	border-top:0px;
+	font-family: 'Raleway', sans-serif;
+	line-height:40px;
+	font-size:25px;
+}
+.txt1 {
+	font-weight:bold;
+}
+.naslovna_dugme
+{	
+	margin-top:20px;
+	height:50px;
+	width:150px;
+	border:3px solid white;
+	border-radius:20px;
+	font-size:30px;
+	color:white;
+	background-color:transparent;
+	transition: 0.3s;
+	font-family:'Raleway';
+	font-weight:bold;
+}
+.naslovna_dugme:hover {
+	background-color:white;
+	color:#101c3d;
+}
+.podnozje
+{
+	font-size:15px;
+	padding-top:25px;
+	color:white;
+	font-family:'Verdana';
+	height:50px;
+	width:100%;
+	text-align:center;
+	border-top:3px solid white;
+}
+
+.o_meni_naslov, .vjezbe_naslov, .povratak {
+	display: flex;
+	flex-wrap:wrap;
+	width: 100%;
+	font-family:'Bebas Neue';
+	color:white;
+	margin-top:30px;
+	font-size:40px;
+	align-items: center;
+	justify-content:center;
+}
+.o_meni_tekst_container{	
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:100%;
+	height:auto;
+}
+.o_meni_tekst {
+	font-family:'Raleway';
+	font-size:25px;
+	line-height:40px;
+	color:white;
+	width:1000px;
+	margin: 20px 40px 0px 40px;
+	text-align:center;
+}
+.o_meni_radovi {
+	display: flex;
+	flex-wrap:wrap;
+	width: 100%;
+	font-family:'Bebas Neue';
+	text-align:center;
+	color:white;
+	font-size:40px;
+	justify-content:center;
+	margin:30px 0px 0px 0px;
+}
+.main3 {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+
+	width:100%;
+}
+.r1, .r2, .r3, .r4, .r5, .r6 {
+
+	width:1000px;
+	
+	display:flex;
+	flex-wrap:wrap;
+	margin:30px 0px 0px 0px;
+	padding:30px;
+	justify-content:space-around;
+	height:auto;
+}
+.r1, .r3, .r5 {
+	background-color:rgba(255, 255, 255, 0.3);
+}
+.r2, .r4, .r6 {
+	background-color:rgba(40, 76, 133, 0.3);
+}
+.s {
+	transition: 0.3s;
+}
+.s:hover {
+	transform: scale(0.9);
+}
+.vjezbe_naslov, .povratak {
+	margin-bottom:30px;
+}
+.sekcija_vjezbe
+{
+	height:200px;
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	padding:50px 0px 100px 0px;
+	background-color:white;
+	margin-bottom:50px;
+}
+.br1, .br2, .br3, .br4, .pz1, .br5, .br6, .br7, .br8, .br9 {
+	height:100px;
+	width:100px;
+	background-color:#101c3d;
+	color:white;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family:'Bebas Neue';
+	font-size:80px;
+	text-align:center;
+	border-radius:50px;
+}
+.br1 {
+	margin-top:-240px;
+}
+.br2 {
+	margin:-260px 40px 0px 0px;
+}
+.br5 {
+	margin:-300px 0px 0px 0px;
+}
+.slika1
+{
+	margin:30px 30px 0px 10px;
+}
+.sekcija_vjezbe_tekst, .sekcija_vjezbe_tekst2, .sekcija_vjezbe_tekst4, .sekcija_vjezbe_tekst5, .sekcija_vjezbe_tekst6, .sekcija_vjezbe_tekst7, .sekcija_vjezbe_tekstpz2, .sekcija_vjezbe_tekst8, .sekcija_vjezbe_tekst9
+{
+	float:right;
+	height:150px;
+	width:500px;
+	line-height:45px;
+	margin-left:100px;
+	font-family:'Raleway';
+}
+.opis, .opis2, .opis3, .opis4, .opispz1, .opis5, .opis6, .opispz2 {
+	border-top:3px solid black;
+	border-left:3px solid black;
+	padding:10px 0px 0px 30px;
+	margin-bottom:10px;
+}
+.sekcija_vjezbe_tekst1
+{
+	height:150px;
+	font-family:'TomislavSinanovic';
+	text-align:center;
+	width:280px;
+	margin:0px 0px 0px 30px;
+	font-size:60px;
+	color:black;
+	line-height:70px;
+}
+.sekcija_vjezbe_tekst {
+	margin:-50px 0px 0px 100px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst2 {
+	margin:-80px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst4 {
+	margin:-150px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst5 {
+	margin:-150px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst6 {
+	margin:-100px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst7 {
+	margin:-120px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekstpz2 {
+	margin:-20px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst8 {
+	margin:-85px 0px 0px 50px;
+	font-size:20px;
+}
+.sekcija_vjezbe_tekst9 {
+	margin:-60px 0px 0px 50px;
+	font-size:20px;
+}
+.opis {
+	width:200px;
+	font-size:25px;
+}
+.opis2 {
+	width:250px;
+	font-size:25px;
+}
+.opis3 {
+	width:450px;
+	font-size:25px;
+}
+.opis4 {
+	width:350px;
+	font-size:25px;
+}
+.opispz1 {
+	width:400px;
+	font-size:25px;
+}
+.opis5 {
+	width:350px;
+	font-size:25px;
+}
+.opis6 {
+	width:200px;
+	font-size:25px;
+}
+.opispz2 {
+	width:400px;
+	font-size:25px;
+}
+.br4 {
+	margin:-300px 120px 0px 0px;
+}
+.slika4
+{
+	margin:-20px 80px 0px 0px;
+}
+.slika5
+{
+	margin:-25px 50px 0px 100px;
+}
+.pz1 {
+	margin:-300px 0px 0px 0px;
+}
+.slika6 {
+	margin:0px 10px 0px 10px;
+}
+.br6 {
+	margin:-280px 60px 0px 0px;
+}
+.br7 {
+	margin:-260px 30px 0px 0px;
+}
+.slika7 {
+	margin:30px 5px 0px 40px;
+}
+.br8 {
+	margin:-260px 0px 0px 0px;
+}
+.br9 {
+	margin:-260px 0px 0px 0px;
+}
+.video {
+	margin:20px 5px 0px 40px;
+}
+.slika1, .slika4, .slika5, .slika6, .slika7 {
+	transition: 0.3s;
+}
+.slika1:hover {
+	transform: scale(0.9);
+}
+.slika4:hover {
+	transform: scale(0.9);
+}
+.slika5:hover {
+	transform: scale(0.9);
+}
+.slika6:hover {
+	transform: scale(0.9);
+}
+.slika7:hover {
+	transform: scale(0.9);
+}
+.povratak a{
+	text-decoration:none;
+	color:white;
+	transition: 0.3s;
+}
+.povratak a:hover{
+	transform: scale(0.9);
+}
+.reklama {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin:30px 0px 30px 0px;
+}
+.video_tekst_container{	
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:100%;
+	height:auto;
+}
+.video_tekst {
+	font-family:'Raleway';
+	font-size:25px;
+	line-height:40px;
+	color:white;
+	width:1000px;
+	margin: 10px 40px 40px 40px;
+	text-align:center;
+}
+.fcontainer {
+	 display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+}
+form
+{
+  padding:20px;
+}
+.input-container 
+{
+  margin:20px 0px 0px 0px;
+ 
+}
+.input {
+  width: 300px;
+  border:none;
+  border-bottom: 2px solid white;
+  background: none;
+  padding:10px;
+}
+
+textarea.input {
+  min-height: 150px;
+  resize: none;
+  margin-bottom:20px;
+  border: 2px solid white;
+}
+
+label {
+  color:white;
+  font-size:18px;
+  font-family:'Raleway';  
+}
+.dugmadi
+{
+	width:100%;
+	height:60px;
+	display:flex;
+	justify-content:center;
+}
+.btn {
+	margin:0px 10px 0px 10px;
+	padding:10px 30px 10px 30px;
+	background-color:white;
+	border:none;
+	font-size:15px;
+	height:40px;
+	color:#101c3d;
+	border-radius: 25px;
+	outline: none;
+	transition: 0.3s;
+}
+
+.btn:hover {
+  background-color:transparent;
+  color:white;
+  border: 2px solid white;
+}
